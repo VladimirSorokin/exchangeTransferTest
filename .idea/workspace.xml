@@ -4,6 +4,7 @@
     <list default="true" id="2bd1f79f-1c46-44a9-8dd1-261aab9a4595" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/accounts/bt_caccount.rb" afterPath="$PROJECT_DIR$/features/accounts/bt_caccount.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/accounts/usd_account.rb" afterPath="$PROJECT_DIR$/features/accounts/usd_account.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/transfer_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/transfer_steps.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,21 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transfer_steps.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="transfer_steps.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/transfer_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="459">
+              <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bt_caccount.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bt_caccount.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/accounts/bt_caccount.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="391">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -47,8 +48,8 @@
       <file leaf-file-name="usd_account.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/accounts/usd_account.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="25" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -79,10 +80,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/features/step_definitions/transfer_steps.rb" />
         <option value="$PROJECT_DIR$/features/transfer.feature" />
         <option value="$PROJECT_DIR$/features/accounts/usd_account.rb" />
         <option value="$PROJECT_DIR$/features/accounts/bt_caccount.rb" />
+        <option value="$PROJECT_DIR$/features/step_definitions/transfer_steps.rb" />
       </list>
     </option>
   </component>
@@ -131,12 +132,6 @@
               <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="accounts" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="exchangeTransferTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exchangeTransferTest" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="step_definitions" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -173,12 +168,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509480048426</updated>
-      <workItem from="1509480054405" duration="11606000" />
+      <workItem from="1509480054405" duration="11827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11606000" />
+    <option name="totallyTimeSpent" value="11827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -238,14 +233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/transfer_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/transfer.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -264,16 +251,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/accounts/usd_account.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/accounts/bt_caccount.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/transfer_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding />
         </state>
       </provider>

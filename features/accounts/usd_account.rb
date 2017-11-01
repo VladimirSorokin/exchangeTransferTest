@@ -20,4 +20,8 @@ class USD_account
   def get_balance
 
   end
+
+  def get_uuid
+    @config['USD']
+  end
 end

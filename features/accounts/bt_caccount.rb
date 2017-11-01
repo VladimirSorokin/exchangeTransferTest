@@ -21,4 +21,8 @@ class BTCAccount
 
   end
 
+  def get_uuid
+    @config['BTC']
+  end
+
 end

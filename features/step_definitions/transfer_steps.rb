@@ -25,6 +25,6 @@ Then(/^Transfer from "([^"]*)" account to "([^"]*)" account. Amount "([^"]*)"$/)
       raise('Unspported account name!')
   end
 
-  from_account.send_to_account(to_account.uuid, arg3)
+  from_account.send_to_account(to_account.get_uuid, arg3)
 
 end
