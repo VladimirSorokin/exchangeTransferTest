@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="ruby-2.4.2-p198" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="backports (v3.10.3, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.16.0, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber (v3.0.1, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-core (v3.0.0, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-expressions (v4.0.4, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-tag_expressions (v1.0.1, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-wire (v0.0.1, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ethon (v0.11.0, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.18, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gherkin (v4.1.3, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.12.2, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.1.2, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oj (v3.3.9, ruby-2.4.2-p198) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="typhoeus (v1.3.0, ruby-2.4.2-p198) [gem]" level="application" />
+  </component>
+</module>
