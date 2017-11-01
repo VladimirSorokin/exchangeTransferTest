@@ -5,6 +5,7 @@ class USD_account
   def initialize
     json_config = Oj.load_file('/features/config', Oj.default_options)
     @config = json_config
+    puts @config
     @uuid = @config['USD']
   end
 
