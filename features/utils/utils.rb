@@ -14,7 +14,7 @@ class Utils
     end
 
     calcualted_fee = resp['debit_amount']/100*fee
-    if resp['fee'] != calcualted_fee.round(2)
+    if resp['fee'] != calcualted_fee.round(4)
       raise 'Fee is incorrect in response'
     end
 
