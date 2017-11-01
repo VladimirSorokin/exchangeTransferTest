@@ -19,13 +19,13 @@ class BTCAccount
 
   def get_balance
     res = Typhoeus::Request.get(@config['URL'], :headers=>{'Content-type'=>'application/json', 'X-Api-Key'=>@config['API_KEY']})
-    # for value in Oj.load(res.body, Oj.default_options)
-    #   puts 'Check value!'
-    #   if value['currency'] == 'BTC'
-    #     puts value['balance']
-    #     return value['balance']
-    #   end
-    # end
+    for value in Oj.load(res.body, Oj.default_options)
+      puts 'Check value!'
+      if value['currency'] == 'BTC'
+        puts value['balance']
+        return value['balance']
+      end
+    end
   end
 
   def get_uuid
