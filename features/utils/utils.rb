@@ -14,13 +14,13 @@ class Utils
 
     calcualted_fee = resp['debit_amount']/100*fee
     puts calcualted_fee
-    if resp['fee'] != calcualted_fee.round 2
+    if resp['fee'] != calcualted_fee.round(2)
       raise 'Fee is incorrect in response'
     end
 
     calculated_credit_amount =  (resp['debit_amount'] - resp['fee'])/resp['rate']
     puts calculated_credit_amount
-    if calculated_credit_amount.round 4 != resp['credit_amount']
+    if calculated_credit_amount.round(4) != resp['credit_amount']
       raise 'Calculated credit is incorrect in response'
     end
   end
