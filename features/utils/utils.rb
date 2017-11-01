@@ -31,11 +31,8 @@ class Utils
           raise 'Balanse in from_account after transfer is incorrect!'
         end
       when 'to_account'
-        puts balance_before
-        puts balance_after
-        puts balance_before - balance_after
-        puts amount
-        if balance_after - balance_after != amount
+        calcualted_balance_diff = balance_after - balance_before
+        if calcualted_balance_diff.round(4) != amount
           raise 'Balanse to_account after transfer is incorrect!'
         end
       else
