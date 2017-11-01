@@ -13,7 +13,7 @@ class USD_account
     # header = {'Content-Type': 'application/x-www-form-urlencoded', 'X-Api-Key': @config['API_KEY']}
     res = Typhoeus::Request.post(@config['URL'],
                                  body: {'amount': amount, 'amount_currency': 'USD', 'from_account':@uuid, 'to_account':account},
-                                 headers=>{'Content-type'=>'application/x-www-form-urlencoded', 'X-Api-Key'=>@config['API_KEY']})
+                                 :headers=>{'Content-type'=>'application/x-www-form-urlencoded', 'X-Api-Key'=>@config['API_KEY']})
     puts res.body
   end
 
