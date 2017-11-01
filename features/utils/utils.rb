@@ -37,5 +37,6 @@ class Utils
       else
         raise 'Unsupported type!'
     end
+  end
 
 end
