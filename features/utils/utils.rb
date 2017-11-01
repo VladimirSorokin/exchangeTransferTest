@@ -6,7 +6,7 @@ class Utils
     @config = json_config
   end
 
-  def verified_response(resp, fee=@config['FEE'])
+  def verified_response(resp, fee=@config['FEE'].to_i)
     resp.each_value do |value|
       puts value
       if value.to_s.length <= 0
