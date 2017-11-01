@@ -14,15 +14,13 @@ class USD_account
     res = Typhoeus::Request.post(@config['URL'],
                                  body: {'amount': amount, 'amount_currency': 'USD', 'from_account':@uuid, 'to_account':account},
                                  :headers=>{'Content-type'=>'application/x-www-form-urlencoded', 'X-Api-Key'=>@config['API_KEY']})
-    puts res.body
+    return Oj.load(res.body, Oj.default_options)
   end
 
   def get_balance
     res = Typhoeus::Request.get(@config['URL_A'], :headers=>{'Content-type'=>'application/json', 'X-Api-Key'=>@config['API_KEY']})
     for value in Oj.load(res.body, Oj.default_options)
-      puts 'Check value!'
       if value['currency'] == 'USD'
-        puts value['balance']
         return value['balance']
       end
     end

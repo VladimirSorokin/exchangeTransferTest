@@ -1,4 +1,6 @@
 Then(/^Transfer from "([^"]*)" account to "([^"]*)" account. Amount "([^"]*)"$/) do |arg1, arg2, arg3|
+  verifier = Utils.new
+
   case arg1
     when 'BTC'
       from_account = BTCAccount.new
@@ -25,8 +27,6 @@ Then(/^Transfer from "([^"]*)" account to "([^"]*)" account. Amount "([^"]*)"$/)
       raise('Unspported account name!')
   end
 
-  from_account.send_to_account(to_account.get_uuid, arg3)
-  puts to_account.get_balance
-  puts from_account.get_balance
-
+  resp = from_account.send_to_account(to_account.get_uuid, arg3)
+  verifier.verified_response(resp)
 end
