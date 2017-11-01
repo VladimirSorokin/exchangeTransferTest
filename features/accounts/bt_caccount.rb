@@ -14,12 +14,16 @@ class BTCAccount
     res = Typhoeus::Request.post(@config['URL'],
                                  body: {'amount': amount, 'amount_currency': 'BTC', 'from_account':@uuid, 'to_account':account},
                                  :headers=>{'Content-type'=>'application/x-www-form-urlencoded', 'X-Api-Key'=>@config['API_KEY']})
-    puts res.body
+    puts res.body['debit_amount']
   end
 
   def get_balance
     res = Typhoeus::Request.get(@config['URL'], :headers=>{'Content-type'=>'application/json', 'X-Api-Key'=>@config['API_KEY']})
-    puts res.body
+    for value in res.body
+      if value['currency'] == 'BTC'
+        return value['balance']
+      end
+    end
   end
 
   def get_uuid
