@@ -6,10 +6,6 @@ Then(/^Transfer from "([^"]*)" account to "([^"]*)" account. Amount "([^"]*)"$/)
       from_account = BTCAccount.new
     when 'USD'
       from_account = USD_account.new
-    when 'EUR'
-      from_account = BTCAccount.new
-    when 'GBP'
-      from_account = BTCAccount.new
     else
       raise('Unspported account name!')
   end
@@ -19,10 +15,6 @@ Then(/^Transfer from "([^"]*)" account to "([^"]*)" account. Amount "([^"]*)"$/)
       to_account = BTCAccount.new
     when 'USD'
       to_account = USD_account.new
-    when 'EUR'
-      to_account = BTCAccount.new
-    when 'GBP'
-      to_account = BTCAccount.new
     else
       raise('Unspported account name!')
   end
