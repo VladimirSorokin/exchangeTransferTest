@@ -18,10 +18,6 @@ class Utils
       raise 'Fee is incorrect in response'
     end
 
-    # calculated_credit_amount =  (resp['debit_amount'] - resp['fee'])/resp['rate']
-    # if calculated_credit_amount.round(4) != resp['credit_amount']
-    #   raise 'Calculated credit is incorrect in response'
-    # end
   end
 
   def verified_balanse(balance_before, balance_after, amount, type)
