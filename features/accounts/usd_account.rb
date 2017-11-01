@@ -19,7 +19,7 @@ class USD_account
 
   def get_balance
     res = Typhoeus::Request.get(@config['URL'], :headers=>{'Content-type'=>'application/json', 'X-Api-Key'=>@config['API_KEY']})
-    for value in res.body
+    for value in Oj.load(res.body, Oj.default_options)
       if value['currency'] == 'USD'
         return value['balance']
       end
