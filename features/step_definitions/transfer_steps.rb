@@ -26,5 +26,6 @@ Then(/^Transfer from "([^"]*)" account to "([^"]*)" account. Amount "([^"]*)"$/)
   end
 
   from_account.send_to_account(to_account.get_uuid, arg3)
+  to_account.get_balance
 
 end

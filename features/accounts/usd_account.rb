@@ -18,10 +18,13 @@ class USD_account
   end
 
   def get_balance
-
+    res = Typhoeus::Request.get(@config['URL'], :headers=>{'Content-type'=>'application/json', 'X-Api-Key'=>@config['API_KEY']})
+    puts res.body
   end
 
   def get_uuid
     @config['USD']
   end
+
+
 end
