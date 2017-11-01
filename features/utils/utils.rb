@@ -31,7 +31,7 @@ class Utils
         puts balance_after
         puts balance_before - balance_after
         puts amount
-        if balance_before - balance_after != amount.to_i
+        if balance_before - balance_after != amount.to_f
           raise 'Balanse in from_account after transfer is incorrect!'
         end
       when 'to_account'
