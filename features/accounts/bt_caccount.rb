@@ -3,7 +3,7 @@ require 'typhoeus'
 
 class BTCAccount
   def initialize
-    json_config = Oj.load_file('/features/config', Oj.default_options)
+    json_config = Oj.load_file('features/config', Oj.default_options)
     @config = json_config
     @uuid = @config['BTC']
   end
