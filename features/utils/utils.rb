@@ -27,14 +27,14 @@ class Utils
   def verified_balanse(balance_before, balance_after, amount, type)
     case type
       when 'from_account'
-        puts balance_before
-        puts balance_after
-        puts balance_before - balance_after
-        puts amount
         if balance_before - balance_after != amount.to_f
           raise 'Balanse in from_account after transfer is incorrect!'
         end
       when 'to_account'
+        puts balance_before
+        puts balance_after
+        puts balance_before - balance_after
+        puts amount
         if balance_after - balance_after != amount
           raise 'Balanse to_account after transfer is incorrect!'
         end
