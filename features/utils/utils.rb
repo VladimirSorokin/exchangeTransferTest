@@ -1,3 +1,5 @@
+require 'oj'
+
 class Utils
   def initialize
     json_config = Oj.load_file('features/config', Oj.default_options)
