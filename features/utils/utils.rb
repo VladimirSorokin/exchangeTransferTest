@@ -27,7 +27,8 @@ class Utils
   def verified_balanse(balance_before, balance_after, amount, type)
     case type
       when 'from_account'
-        if balance_before - balance_after != amount.to_f
+        calcualted_balance_diff = balance_before - balance_after
+        if calcualted_balance_diff.round(4) != amount.to_f
           raise 'Balanse in from_account after transfer is incorrect!'
         end
       when 'to_account'
